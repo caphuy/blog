@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "30a37728-0109-4625-873e-2c32fd4bead1",
+		"name": "Got it",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Post by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiAiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwgInN1YiI6ICJzdWRvIiwgImRhdGEiOiB7InVzZXJfaWQiOiA5fX0.KG8nsPal6v01d_zppP7TcuG8EKMmRaBp3Fu5AKfjdhB2bo0P19MtC77NaD36yKnTEltN8Yw5frNdX_8XgcNbFmpMMVGqVXIzhPwJ9KElFfKNcESVIlcYQtO2bHw5thYPYIq9a5Uk7e4wLSreeO9pAOOoP6oWK23rkBO0ianavraXtmgreGl3cRXk-yAKdu38u1PHCCoBLBOXgp5vFOpmnZ4-sTYfYvsm57uQHu-eQD3yhw4tIjfxU2JlHQwSKoBKG5ZE2BJAuDNfEMLPveEihYSC8WbLMvPQN439dZdjMZ9tpOjeLfR8NU6j0WkjdrB1-YS0i7svJ2QEZw3AVRHOGg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/api/post/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"post",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiAiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwgInN1YiI6ICJzdWRvIiwgImRhdGEiOiB7InVzZXJfaWQiOiA5fX0.KG8nsPal6v01d_zppP7TcuG8EKMmRaBp3Fu5AKfjdhB2bo0P19MtC77NaD36yKnTEltN8Yw5frNdX_8XgcNbFmpMMVGqVXIzhPwJ9KElFfKNcESVIlcYQtO2bHw5thYPYIq9a5Uk7e4wLSreeO9pAOOoP6oWK23rkBO0ianavraXtmgreGl3cRXk-yAKdu38u1PHCCoBLBOXgp5vFOpmnZ4-sTYfYvsm57uQHu-eQD3yhw4tIjfxU2JlHQwSKoBKG5ZE2BJAuDNfEMLPveEihYSC8WbLMvPQN439dZdjMZ9tpOjeLfR8NU6j0WkjdrB1-YS0i7svJ2QEZw3AVRHOGg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Demo title\",\n\t\"content\": \"Demo content\"\n}"
+				},
+				"url": {
+					"raw": "localhost:5000/api/post",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiAiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwgInN1YiI6ICJzdWRvIiwgImRhdGEiOiB7InVzZXJfaWQiOiA5fX0.KG8nsPal6v01d_zppP7TcuG8EKMmRaBp3Fu5AKfjdhB2bo0P19MtC77NaD36yKnTEltN8Yw5frNdX_8XgcNbFmpMMVGqVXIzhPwJ9KElFfKNcESVIlcYQtO2bHw5thYPYIq9a5Uk7e4wLSreeO9pAOOoP6oWK23rkBO0ianavraXtmgreGl3cRXk-yAKdu38u1PHCCoBLBOXgp5vFOpmnZ4-sTYfYvsm57uQHu-eQD3yhw4tIjfxU2JlHQwSKoBKG5ZE2BJAuDNfEMLPveEihYSC8WbLMvPQN439dZdjMZ9tpOjeLfR8NU6j0WkjdrB1-YS0i7svJ2QEZw3AVRHOGg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/api/post",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Action or remove action",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiAiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwgInN1YiI6ICJzdWRvIiwgImRhdGEiOiB7InVzZXJfaWQiOiA5fX0.KG8nsPal6v01d_zppP7TcuG8EKMmRaBp3Fu5AKfjdhB2bo0P19MtC77NaD36yKnTEltN8Yw5frNdX_8XgcNbFmpMMVGqVXIzhPwJ9KElFfKNcESVIlcYQtO2bHw5thYPYIq9a5Uk7e4wLSreeO9pAOOoP6oWK23rkBO0ianavraXtmgreGl3cRXk-yAKdu38u1PHCCoBLBOXgp5vFOpmnZ4-sTYfYvsm57uQHu-eQD3yhw4tIjfxU2JlHQwSKoBKG5ZE2BJAuDNfEMLPveEihYSC8WbLMvPQN439dZdjMZ9tpOjeLfR8NU6j0WkjdrB1-YS0i7svJ2QEZw3AVRHOGg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"action\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:5000/api/action/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"action",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
