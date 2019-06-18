@@ -13,4 +13,6 @@ Step 4: Init and migrate db
 Step 5: Run project
     $ python run.py
 
-Import Got it.postman_collection.json to postman to see demo requests
+Import Got it.postman_collection.json to postman to see demo requests api
+Link embedded to login: http://localhost:5000/user/authorize/facebook
+                        http://localhost:5000/user/authorize/google
